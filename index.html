@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="Css/master.css">
+    <link rel="stylesheet" href="Css/Button.css">
     <title>Sistycommex</title>
 </head>
 
 <body>
 
     <div id="particles-js"></div>
-    <div class="main-container flex-layout-vertical">
-        <header class="header flex-layout-horizontal">
+    <div class="main-container">
+        <header class="header flex-layout-horizontal background-area">
             <a href="#" class="header__logo"></a>
             <nav class="header__nav">
                 <a href="#">Nosotros</a>
@@ -23,7 +24,7 @@
             <div class="header__mode"></div>
         </header>
 
-        <main class="main flex-layout-vertical">
+        <main class="main">
             <section class="main__hero flex-layout-vertical">
                 <h1>Sistycommex</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, numquam? Impedit cupiditate rem ipsam
@@ -32,13 +33,13 @@
             </section>
 
             <section class="main__carousel">
-                <div class="main__carousel--card1 flex-layout-vertical">
+                <div class="main__carousel--card flex-layout-vertical background-area">
                     <h3>Sobre Nosotros</h3>
                     <p>Somos una Empresa conformada por un grupo de personas altamente competitivas y comprometidas con
                         el servicio. Brindamos Soluciones Tecnológicas y Servicios de Asesoría en TIc.</p>
                     <img src="" alt="">
                 </div>
-                <div class="main__carousel--card2 flex-layout-vertical">
+                <div class="main__carousel--card flex-layout-vertical background-area">
                     <h3>Servicios</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis maiores
                         necessitatibus ipsam sint laudantium, dolore perferendis molestias ipsum dignissimos. Ut quas
@@ -46,28 +47,35 @@
                     <img src="" alt="">
                 </div>
             </section>
-            <section class="main__form flex-layout-vertical">
-                <form action="">
+            <section class="main__form">
+                <form action="" class="flex-layout-vertical">
                     <h3>Contacto</h3>
-                    <label for="">
+                    <label for="name" class="flex-layout-vertical">
                         <p>Nombre</p>
-                        <input type="text">
+                        <input type="text" id="name" class="background-area">
                     </label>
-                    <label for="">
+                    <label for="email" class="flex-layout-vertical">
                         <p>Correo</p>
-                        <input type="text">
+                        <input type="email" id="email" class="background-area">
                     </label>
-                    <label for="">
+                    <label for="textarea" class="flex-layout-vertical">
                         <p>Comentario</p>
-                        <input type="text">
+                        <textarea name="" id="textarea" rows="10" class="background-area"></textarea>
                     </label>
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" class="button">
                 </form>
             </section>
         </main>
 
         <footer class="footer flex-layout-horizontal">
-
+            <ul>
+                <li><a href="#">55-5838-4113</a></li>
+                <li><a href="#">55-8789-7917</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">55-8789-7978</a></li>
+                <li><a href="#">correo@mail.com</a></li>
+            </ul>
         </footer>
     </div>
 

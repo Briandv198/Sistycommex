@@ -1,0 +1,195 @@
+/*
+1. Posicionamiento
+2. Modelo de caja (Box model)
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+:root {
+    /*Variables de Color*/
+    --Oxford-Blue-Strong: #011833;
+    --Oxford-Blue: #011E40;
+    --White: #FAFCFF;
+    --just-white: #FFFFFF;
+    --Sapphire-Blue: #186999;
+    --Red-Crayola: #ED254E;
+    --Goldenrod: #E3B03B;
+    --grey: #BABABA;
+}
+*{
+    /*Se resetean los valores del navegador*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    /*Esto es para utilizar rem*/
+    font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}
+h1, h3 {
+    color: var(--Oxford-Blue-Strong);
+}
+h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+p {
+    color: var(--Sapphire-Blue);
+    text-align: center;
+    font-size: 1.8rem;
+}
+.background-area {
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    background-color: var(--just-white);
+    box-shadow: 9px 9px 31px rgba(1, 24, 51, 0.12);
+}
+.flex-layout-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-layout-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background-color: var(--White);
+}
+.main-container {
+    z-index: 1;
+    position: relative;
+}
+.main-container .header {
+    width: 100%;
+    backdrop-filter: blur(4px);
+}
+.main-container .header .header__logo, .main-container .header .header__mode {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-inline: 16px;
+    margin-block: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-container .header .header__logo {
+    background-image: url('../Assets/Icons/logo.png');
+}
+.main-container .header .header__mode {
+    background-image: url('../Assets/Icons/mode-dark.png');
+}
+.main-container .header .header__nav {
+    display: none;
+    justify-content: flex-end;
+    width: 80%;
+}
+.main-container .header .header__nav a{
+    margin-inline-start: 3.0rem;
+    font-size: 2.8rem;
+    font-weight: lighter;
+    text-decoration: none;
+    color: var(--Sapphire-Blue);
+}
+.main-container .main .main__hero {
+    width: 80%;
+    margin-inline: auto;
+    margin-block-start: 6.6rem;
+    margin-block-end: 8rem;
+}
+.main-container .main .main__hero h1 {
+    margin-block-end: 5.3rem;
+}
+.main-container .main .main__carousel {
+    display: flex;
+    padding-block: 30px;
+    gap: 10px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.main-container .main .main__carousel .main__carousel--card {
+    justify-content: space-evenly;
+    margin-inline: 40px;
+    padding-inline: 30px;
+    width: 70%;
+    height: 500px;
+    min-width: 291px;
+    max-width: 500px;
+    scroll-snap-align: center;
+    backdrop-filter: blur(4px);
+    border-radius: 25px;
+}
+.main-container .main .main__form form {
+    justify-content: space-evenly;
+    width: 80%;
+    margin-inline: auto;
+    margin-block-start: 50px;
+}
+.main-container .main .main__form form h3 {
+    margin-block-end: 10px;
+}
+.main-container .main .main__form form .button {
+    margin-block-start: 20px;
+    padding-block: 10px;
+    padding-inline: 40px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    color: var(--just-white);
+    background-color: var(--Oxford-Blue-Strong);
+    box-shadow: 9px 9px 31px rgba(1, 24, 51, 0.30);
+    border-radius: 25px;
+    border: none;
+
+}
+.main-container .main .main__form form label {
+    width: 80%;
+}
+.main-container .main .main__form form label p {
+    margin-block-end: 11px;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+.main-container .main .main__form form label input,
+.main-container .main .main__form form label textarea {
+    width: 100%;
+    margin-block-end: 30px;
+    padding-inline: 15px;
+    padding-block: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    color: var(--Oxford-Blue-Strong);
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+.main-container .footer {
+    margin-block-start: 50px;
+    padding-block: 10px;
+    justify-content: space-evenly;
+    background-color: var(--Oxford-Blue-Strong);
+}
+.main-container .footer ul li {
+    list-style: none;
+}
+.main-container .footer ul li a {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: var(--White);
+    text-decoration: none;
+}
