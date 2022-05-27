@@ -12,4 +12,12 @@
     .main-container .main .main__form .img {
         display: block;
     }
+
+    .main-container .main .main__form form {
+        margin-inline: 0;
+    }
+
+    .main-container .footer ul li a {
+        font-size: 1.4rem;
+    }
 }

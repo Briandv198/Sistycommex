@@ -1,17 +1,16 @@
 let background1 = "#212121";
 let background2 = "#000000";
-let particles = 15;
+let particles = 30;
 
 if (screen.width <= 375) {
-    particles = 15;
-} else if (screen.width <= 800) {
     particles = 30;
+} else if (screen.width <= 800) {
+    particles = 80;
 } else {
-    particles = 50;
+    particles = 100;
 }
 
 document.querySelector('.header__mode').addEventListener('click', () => {
-    debugger;
     if (document.querySelector('#light') != null) {
         background1 = "#ffffff";
         background2 = "#ffffff";
@@ -58,7 +57,7 @@ document.querySelector('.header__mode').addEventListener('click', () => {
                     }
                 },
                 "size": {
-                    "value": 8,
+                    "value": 10,
                     "random": true,
                     "anim": {
                         "enable": true,
@@ -69,14 +68,14 @@ document.querySelector('.header__mode').addEventListener('click', () => {
                 },
                 "line_linked": {
                     "enable": true,
-                    "distance": 200,
+                    "distance": 50,
                     "color": background1,
                     "opacity": 0.7,
                     "width": 2
                 },
                 "move": {
                     "enable": true,
-                    "speed": 2.5,
+                    "speed": 1.5,
                     "direction": "top",
                     "random": true,
                     "straight": false,
@@ -172,7 +171,7 @@ particlesJS(
                 }
             },
             "size": {
-                "value": 8,
+                "value": 10,
                 "random": true,
                 "anim": {
                     "enable": true,
@@ -183,14 +182,14 @@ particlesJS(
             },
             "line_linked": {
                 "enable": true,
-                "distance": 200,
+                "distance": 50,
                 "color": background1,
                 "opacity": 0.7,
                 "width": 2
             },
             "move": {
                 "enable": true,
-                "speed": 2.5,
+                "speed": 1.5,
                 "direction": "top",
                 "random": true,
                 "straight": false,

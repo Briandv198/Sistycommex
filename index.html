@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/Icons/logo.png">
     <link rel="stylesheet" href="Css/master.css">
     <link rel="stylesheet" href="Css/tablet.css">
+    <link rel="stylesheet" href="Css/desktop.css">
     <title>Sistycommex</title>
 </head>
 
@@ -17,9 +19,9 @@
         <header class="header flex-layout-horizontal background-area">
             <a href="#" class="header__logo"></a>
             <nav class="header__nav">
-                <a href="#">Nosotros</a>
-                <a href="#">Servicios</a>
-                <a href="#">Contacto</a>
+                <a href="#main-about">Nosotros</a>
+                <a href="#main-services">Servicios</a>
+                <a href="#main-contact">Contacto</a>
             </nav>
             <div id="light" class="header__mode"></div>
         </header>
@@ -33,23 +35,27 @@
             </section>
 
             <section class="main__carousel">
-                <div class="main__carousel--card flex-layout-vertical background-area">
-                    <h3>Sobre Nosotros</h3>
-                    <p>Somos una Empresa conformada por un grupo de personas altamente competitivas y comprometidas con
-                        el servicio. Brindamos Soluciones Tecnológicas y Servicios de Asesoría en TIc.</p>
+                <div id="main-about" class="main__carousel--card flex-layout-vertical background-area">
+                    <div class="flex-layout-vertical">
+                        <h3>Sobre Nosotros</h3>
+                        <p>Somos una Empresa conformada por un grupo de personas altamente competitivas y comprometidas con
+                            el servicio. Brindamos Soluciones Tecnológicas y Servicios de Asesoría en TIc.</p>
+                    </div>
                     <div class="img-card1"></div>
                 </div>
 
-                <div class="main__carousel--card flex-layout-vertical background-area">
-                    <h3>Servicios</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis maiores
-                        necessitatibus ipsam sint laudantium.</p>
+                <div id="main-services" class="main__carousel--card flex-layout-vertical background-area">
+                    <div class="flex-layout-vertical">
+                        <h3>Servicios</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis maiores
+                            necessitatibus ipsam sint laudantium.</p>
+                    </div>
                     <div class="img-card2"></div>
                 </div>
             </section>
 
             <section class="main__form">
-                <form action="" class="flex-layout-vertical">
+                <form id="main-contact" action="" class="flex-layout-vertical">
                     <h3>Contacto</h3>
                     <label for="name" class="flex-layout-vertical">
                         <p>Nombre</p>

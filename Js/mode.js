@@ -42,8 +42,6 @@ document.querySelector('.header__mode').addEventListener('click', () => {
             }
             
             .main-container .header .header__mode {
-                width: 40px;
-                height: 40px;
                 background-image: url(${dark});
             }
     
@@ -119,8 +117,6 @@ document.querySelector('.header__mode').addEventListener('click', () => {
             }
     
             .main-container .header .header__mode {
-                width: 40px;
-                height: 40px;
                 background-image: url(${light});
             }
     
