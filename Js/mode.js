@@ -122,7 +122,7 @@ document.querySelector('.header__mode').addEventListener('click', () => {
     
             .main-container .main .main__form form label input,
             .main-container .main .main__form form label textarea {
-                color: var(--Oxford-Blue-Strong);
+                color: var(--just-white);
             }
     
             .main-container .main .main__form form .button {
