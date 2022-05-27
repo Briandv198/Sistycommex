@@ -309,3 +309,19 @@ p {
 .main-container .footer ul li a {
     color: var(--White);
 }
+.slide {
+    animation: slide;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide {
+    0% {
+        transform: translatey(5%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translatey(0%);
+        opacity: 100%;
+    }
+}
