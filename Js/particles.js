@@ -1,16 +1,20 @@
 let background1 = "#212121";
 let background2 = "#000000";
-let particles = 30;
-let size = 10;
+let particles = 15;
+let size = 4;
 let distance = 150;
 
 if (screen.width <= 375) {
-    particles = 10;
+    distance = 55;
+    particles = 55;
 } else if (screen.width <= 800) {
-    particles = 20;
+    distance = 70;
+    particles = 70;
+    size = 6;
 } else {
-    particles = 40;
-    size = 20;
+    particles = 100;
+    distance = 110;
+    size = 8;
 }
 
 document.querySelector('.header__mode').addEventListener('click', () => {
@@ -65,7 +69,7 @@ document.querySelector('.header__mode').addEventListener('click', () => {
                     "anim": {
                         "enable": true,
                         "speed": 16.783216783216783,
-                        "size_min": 2,
+                        "size_min": 1,
                         "sync": false
                     }
                 },
@@ -74,7 +78,7 @@ document.querySelector('.header__mode').addEventListener('click', () => {
                     "distance": distance,
                     "color": background1,
                     "opacity": 0.7,
-                    "width": 2
+                    "width": 1
                 },
                 "move": {
                     "enable": true,
@@ -141,7 +145,7 @@ particlesJS(
             "number": {
                 "value": particles,
                 "density": {
-                    "enable": true,
+                    "enable": false,
                     "value_area": 2000
                 }
             },
@@ -179,7 +183,7 @@ particlesJS(
                 "anim": {
                     "enable": true,
                     "speed": 16.783216783216783,
-                    "size_min": 2,
+                    "size_min": 1,
                     "sync": false
                 }
             },
@@ -188,7 +192,7 @@ particlesJS(
                 "distance": distance,
                 "color": background1,
                 "opacity": 0.7,
-                "width": 2
+                "width": 1
             },
             "move": {
                 "enable": true,
@@ -199,7 +203,7 @@ particlesJS(
                 "out_mode": "out",
                 "bounce": false,
                 "attract": {
-                    "enable": true,
+                    "enable": false,
                     "rotateX": 5000,
                     "rotateY": 5000
                 }
@@ -209,14 +213,14 @@ particlesJS(
             "detect_on": "canvas",
             "events": {
                 "onhover": {
-                    "enable": true,
+                    "enable": false,
                     "mode": "bubble"
                 },
                 "onclick": {
                     "enable": false,
                     "mode": "push"
                 },
-                "resize": true
+                "resize": false
             },
             "modes": {
                 "grab": {
@@ -227,7 +231,7 @@ particlesJS(
                 },
                 "bubble": {
                     "distance": 225,
-                    "size": 9,
+                    "size": 15,
                     "duration": 2,
                     "opacity": 8,
                     "speed": 3
