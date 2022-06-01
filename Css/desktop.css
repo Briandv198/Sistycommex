@@ -1,13 +1,23 @@
 @media only screen and (min-width: 1350px) {
-
     .main-container .header .header__logo {
-        width: 60px;
-        height: 60px;
+        margin-inline-start: 10%;
     }
 
     .main-container .header .header__mode {
-        width: 50px;
-        height: 50px;
+        margin-inline-end: 10%;
+    }
+    .main-container .header .header__nav {
+        width: 60%;
+    }
+
+    .main-container .header .header__logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .main-container .header .header__mode {
+        width: 55px;
+        height: 55px;
     }
 
     .main-container .header .header__nav {

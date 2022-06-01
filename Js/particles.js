@@ -2,16 +2,15 @@ let background1 = "#212121";
 let background2 = "#000000";
 let particles = 30;
 let size = 10;
-let distance = 50;
+let distance = 150;
 
 if (screen.width <= 375) {
-    particles = 30;
+    particles = 10;
 } else if (screen.width <= 800) {
-    particles = 80;
+    particles = 20;
 } else {
-    particles = 100;
+    particles = 40;
     size = 20;
-    distance = 80
 }
 
 document.querySelector('.header__mode').addEventListener('click', () => {
@@ -64,9 +63,9 @@ document.querySelector('.header__mode').addEventListener('click', () => {
                     "value": size,
                     "random": true,
                     "anim": {
-                        "enable": false,
+                        "enable": true,
                         "speed": 16.783216783216783,
-                        "size_min": 0.1,
+                        "size_min": 2,
                         "sync": false
                     }
                 },
@@ -142,8 +141,8 @@ particlesJS(
             "number": {
                 "value": particles,
                 "density": {
-                    "enable": false,
-                    "value_area": 1500
+                    "enable": true,
+                    "value_area": 2000
                 }
             },
             "color": {
@@ -180,7 +179,7 @@ particlesJS(
                 "anim": {
                     "enable": true,
                     "speed": 16.783216783216783,
-                    "size_min": 0.1,
+                    "size_min": 2,
                     "sync": false
                 }
             },
