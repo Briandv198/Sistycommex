@@ -84,6 +84,7 @@ p {
     z-index: 10000;
     /* clip-path: inset(0 0 0 0); */
 }
+
 #loader .loader-logo {
     position: absolute;
     top: calc(50% - 30px);
@@ -101,24 +102,28 @@ p {
     animation-duration: 2s;
     animation-direction: reverse;
 }
+
 #loader .loader-background1 {
     display: block;
     position: absolute;
     width: 100%;
     height: 200vh;
 }
+
 #loader .loader-background2 {
     display: block;
     position: absolute;
     width: 100%;
     height: 200vh;
 }
+
 #loader .loader-background1 {
     background-color: var(--Oxford-Blue);
     /* top: -200%; */
     animation: input-loader2;
     animation-duration: 2.5s;
 }
+
 #loader .loader-background2 {
     background-color: var(--just-white);
     animation: input-loader;
@@ -184,6 +189,10 @@ p {
     scroll-snap-type: x proximity;
 }
 
+.main-container .main .main__carousel #main-about > div {
+    width: 100%;
+}
+
 .main-container .main .main__carousel .main__carousel--card {
     justify-content: space-between;
     margin-inline: 70px;
@@ -217,10 +226,39 @@ p {
 .main-container .main .main__carousel .main__carousel--card h3,
 .main-container .main .main__carousel .main__carousel--card p {
     padding-inline: 30px;
+    transition: opacity 1.5s;
 }
 
-.main-container .main .main__carousel .main__carousel--card h3 {
-    padding-block: 30px;
+.main-container .main .main__carousel .main__carousel--card .h3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 20%;
+}
+
+.main-container .main .main__carousel .main__carousel--card section {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container .main .main__carousel #main-services > div {
+    width: 100%;
+}
+.main-container .main .main__carousel #main-services .list {
+    text-align: center;
+    display: flex;
+    font-size: 1.8rem;
+    color: var(--Sapphire-Blue);
+    transition: opacity 1.5s;
+}
+
+.main-container .main .main__carousel #main-services .list ul {
+    width: 50%;
+}
+
+.main-container .main .main__carousel #main-services .list ul li {
+    list-style: none;
 }
 
 .main-container .main .main__form {
@@ -358,6 +396,7 @@ p {
 .main-container .footer ul li a {
     color: var(--White);
 }
+
 .slide {
     animation: slide;
     animation-duration: 3s;
@@ -369,36 +408,43 @@ p {
         transform: translatey(5%);
         opacity: 0%;
     }
+
     100% {
         transform: translatey(0%);
         opacity: 100%;
     }
 }
+
 @keyframes input-loader {
     0% {
         transform: translatey(0%);
         display: block;
     }
+
     100% {
         transform: translatey(-100%);
         display: none;
     }
 }
+
 @keyframes input-loader2 {
     0% {
         transform: translatey(100%);
         display: block;
     }
+
     100% {
         transform: translatey(-100%);
         display: none;
     }
 }
+
 @keyframes opacity-loader {
     0% {
         opacity: 0%;
         display: block;
     }
+
     100% {
         opacity: 100%;
         display: none;

@@ -34,26 +34,51 @@
         <main class="main slide">
             <section class="main__hero flex-layout-vertical">
                 <h1>Sistycommex</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, numquam? Impedit cupiditate rem ipsam
-                    autem consequatur voluptate explicabo facilis omnis veniam libero quos, corporis at voluptatum
-                    commodi aut eius consequuntur.</p>
+                <p>Somos una Empresa conformada por un grupo de personas altamente competitivas y comprometidas con
+                    el servicio. Brindamos Soluciones Tecnológicas y Servicios de Asesoría en TIc.</p>
             </section>
 
             <section class="main__carousel">
                 <div id="main-about" class="main__carousel--card flex-layout-vertical background-area">
                     <div class="flex-layout-vertical">
-                        <h3>Sobre Nosotros</h3>
-                        <p>Somos una Empresa conformada por un grupo de personas altamente competitivas y comprometidas con
-                            el servicio. Brindamos Soluciones Tecnológicas y Servicios de Asesoría en TIc.</p>
+                        <section class="h3">
+                            <h3>Sobre Nosotros</h3>
+                        </section>
+                        <section>
+                            <p class="p1">Brindar servicios de Análisis de datos, desarrollo de Software escalable integrando datos y
+                                servicios. Proveer Asesoría en Sistemas Administrativos y Contables con personal calificado
+                                usando tecnología de punta.</p>
+                            <p class="p2">Contribuir al correcto desempeño de los Sistemas de Información, Equipos de Cómputo y
+                                Comunicaciones de nuestros clientes, a fin de que puedan lograr sus objetivos financieros
+                                (rentabilidad adecuada) y de operación (administración eficiente y eficaz que promueva la
+                                mejora continua como mecanismo para alcanzar la productividad).</p>
+                        </section>
                     </div>
                     <div class="img-card1"></div>
                 </div>
 
-                <div id="main-services" class="main__carousel--card flex-layout-vertical background-area">
+                <div id="main-services"
+                    class="main__carousel--card flex-layout-vertical background-area carrusel-contenido">
                     <div class="flex-layout-vertical">
-                        <h3>Servicios</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis maiores
-                            necessitatibus ipsam sint laudantium.</p>
+                        <section class="h3">
+                            <h3>Servicios</h3>
+                        </section>
+                        <section>
+                            <p class="services-p" style="display: none;">Asesoría y consultoría en informática, además de proveer productos con el respaldo y garantía
+                                de las marcas más reconocidas en el mercado.</p>
+                            <section class="list" style="display: none;">
+                                <ul>
+                                    <li>-Servicios Cloud</li>
+                                    <li>-Toner original</li>
+                                    <li>-Computo y Consumbles</li>
+                                </ul>
+                                <ul>
+                                    <li>-Asesoria y Soporte en Sistemas Administrativos Aspel</li>
+                                    <li>-Toner compatible Nuevo</li>
+                                    <li>-Codigo de Barras y POS</li>
+                                </ul>
+                            </section>
+                        </section>
                     </div>
                     <div class="img-card2"></div>
                 </div>
@@ -92,14 +117,46 @@
             </ul>
         </footer>
     </div>
-    <!-- <script src="Js/particles.min.js"></script>
-    <script src="Js/particles.js"></script> -->
+    <script src="Js/particles.min.js"></script>
+    <script src="Js/particles.js"></script>
     <script src="Js/mode.js"></script>
     <script>
+        let p = document.querySelector('.services-p');
+        let list = document.querySelector('.list');
+        let p1 = document.querySelector('.p1');
+        let p2 = document.querySelector('.p2');
+        let loader = document.querySelector('#loader');
+
         setTimeout(() => {
-            let loader = document.querySelector('#loader');
             loader.setAttribute('style', 'display:none');
         }, 2500);
+
+        let fadeIn = () => {
+            list.setAttribute('style', 'opacity: 0;');
+            p2.setAttribute('style', 'opacity: 0;');
+            setTimeout(() => {
+                list.setAttribute('style', 'display: none;');
+                p2.setAttribute('style', 'display: none;');
+                p.setAttribute('style', 'display: block; opacity: 1;');
+                p1.setAttribute('style', 'display: block; opacity: 1;');
+            }, 1500);
+
+            setTimeout(fadeOut, 8000);
+        }
+        let fadeOut = () => {
+            p.setAttribute('style', 'opacity: 0;');
+            p1.setAttribute('style', 'opacity: 0;');
+            setTimeout(() => {
+                p.setAttribute('style', 'display: none;');
+                p1.setAttribute('style', 'display: none;');
+                list.setAttribute('style', 'display: flex; opacity: 1; transition: opacity 1.5s;');
+                p2.setAttribute('style', 'display: flex; opacity: 1; transition: opacity 1.5s;');
+            }, 1500);
+
+            setTimeout(fadeIn, 8000);
+        }
+
+        fadeIn();
     </script>
 </body>
 
