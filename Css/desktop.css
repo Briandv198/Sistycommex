@@ -73,4 +73,14 @@
     .main-container .footer ul li a {
         font-size: 1.6rem;
     }
+
+    .main-container .main .main__carousel #main-services .list {
+        flex-direction: row;
+    }
+    .main-container .main .main__carousel #main-services .list ul li {
+        font-size: 1.8rem;
+    }
+    .p2 {
+        font-size: 1.8rem;
+    }
 }

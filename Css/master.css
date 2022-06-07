@@ -191,6 +191,7 @@ p {
 
 .main-container .main .main__carousel #main-about > div {
     width: 100%;
+    height: 100%;
 }
 
 .main-container .main .main__carousel .main__carousel--card {
@@ -199,7 +200,7 @@ p {
     width: 70%;
     min-width: 291px;
     max-width: 350px;
-    height: 500px;
+    height: 600px;
     scroll-snap-align: center;
     border-radius: 25px;
 }
@@ -235,7 +236,9 @@ p {
     align-items: flex-end;
     height: 20%;
 }
-
+.p2 {
+    font-size: 1.4rem;
+}
 .main-container .main .main__carousel .main__carousel--card section {
     height: 80%;
     display: flex;
@@ -244,10 +247,12 @@ p {
 }
 .main-container .main .main__carousel #main-services > div {
     width: 100%;
+    height: 100%;
 }
 .main-container .main .main__carousel #main-services .list {
     text-align: center;
     display: flex;
+    flex-direction: column;
     font-size: 1.8rem;
     color: var(--Sapphire-Blue);
     transition: opacity 1.5s;
@@ -259,6 +264,7 @@ p {
 
 .main-container .main .main__carousel #main-services .list ul li {
     list-style: none;
+    font-size: 1.6rem;
 }
 
 .main-container .main .main__form {
