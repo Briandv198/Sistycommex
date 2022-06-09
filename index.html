@@ -34,8 +34,6 @@
         <main class="main slide">
             <section class="main__hero flex-layout-vertical">
                 <h1>Sistycommex</h1>
-                <p>Somos una Empresa conformada por un grupo de personas altamente competitivas y comprometidas con
-                    el servicio. Brindamos Soluciones Tecnológicas y Servicios de Asesoría en TIc.</p>
             </section>
 
             <section class="main__carousel">
@@ -44,14 +42,16 @@
                         <section class="h3">
                             <h3>Sobre Nosotros</h3>
                         </section>
-                        <section>
-                            <p class="p1">Brindar servicios de Análisis de datos, desarrollo de Software escalable integrando datos y
-                                servicios. Proveer Asesoría en Sistemas Administrativos y Contables con personal calificado
-                                usando tecnología de punta.</p>
-                            <p class="p2">Contribuir al correcto desempeño de los Sistemas de Información, Equipos de Cómputo y
-                                Comunicaciones de nuestros clientes, a fin de que puedan lograr sus objetivos financieros
-                                (rentabilidad adecuada) y de operación (administración eficiente y eficaz que promueva la
-                                mejora continua como mecanismo para alcanzar la productividad).</p>
+                        <section class="slider">
+                            <ul class="ul">
+                                <li class="li">
+                                    <p class="img">Somos una Empresa conformada por un grupo de personas altamente competitivas y comprometidas con el servicio. Brindamos Soluciones Tecnológicas y Servicios de Asesoría en TIc.</p>
+                                </li>
+                                <li class="li">
+                                    <p class="img">
+                                        Contribuimos en el correcto desempeño de tus Sistemas de Información, Equipos de Computo  y Comunicaciones con el fin de que puedas lograr tus objetivos financieros y operativos.</p>
+                                </li>
+                            </ul>
                         </section>
                     </div>
                     <div class="img-card1"></div>
@@ -63,21 +63,30 @@
                         <section class="h3">
                             <h3>Servicios</h3>
                         </section>
-                        <section>
-                            <p class="services-p" style="display: none;">Asesoría y consultoría en informática, además de proveer productos con el respaldo y garantía
-                                de las marcas más reconocidas en el mercado.</p>
-                            <section class="list" style="display: none;">
-                                <ul>
-                                    <li>-Servicios Cloud</li>
-                                    <li>-Toner original</li>
-                                    <li>-Computo y Consumbles</li>
-                                </ul>
-                                <ul>
-                                    <li>-Asesoria y Soporte en Sistemas Administrativos Aspel</li>
-                                    <li>-Toner compatible Nuevo</li>
-                                    <li>-Codigo de Barras y POS</li>
-                                </ul>
-                            </section>
+                        <section class="slider">
+                            <ul class="ul2">
+                                <li class="li">
+                                    <p class="img">Asesoría y consultoría en Informática, Sistemas Administrativos y Contables con el mejor personal calificado.</p>
+                                </li>
+                                <li class="li">
+                                    <p class="img">Proveemos productos con el respaldo y garantía de las marcas más reconocidas en el mercado.</p>
+                                </li>
+                                <li class="li">
+                                    <section class="list">
+                                        <ul>
+                                            <li>-Servicios Cloud</li>
+                                            <li>-Toner original</li>
+                                            <li>-Computo y Consumbles</li>
+                                            <li>-Análisis de Datos</li>
+                                        </ul>
+                                        <ul>
+                                            <li>-Asesoria y Soporte en Sistemas Administrativos Aspel</li>
+                                            <li>-Toner compatible Nuevo</li>
+                                            <li>-Codigo de Barras y POS</li>
+                                        </ul>
+                                    </section>
+                                </li>
+                            </ul>
                         </section>
                     </div>
                     <div class="img-card2"></div>
@@ -121,42 +130,9 @@
     <script src="Js/particles.js"></script>
     <script src="Js/mode.js"></script>
     <script>
-        let p = document.querySelector('.services-p');
-        let list = document.querySelector('.list');
-        let p1 = document.querySelector('.p1');
-        let p2 = document.querySelector('.p2');
-        let loader = document.querySelector('#loader');
-
         setTimeout(() => {
             loader.setAttribute('style', 'display:none');
         }, 2500);
-
-        let fadeIn = () => {
-            list.setAttribute('style', 'opacity: 0;');
-            p2.setAttribute('style', 'opacity: 0;');
-            setTimeout(() => {
-                list.setAttribute('style', 'display: none;');
-                p2.setAttribute('style', 'display: none;');
-                p.setAttribute('style', 'display: block; opacity: 1;');
-                p1.setAttribute('style', 'display: block; opacity: 1;');
-            }, 1500);
-
-            setTimeout(fadeOut, 8000);
-        }
-        let fadeOut = () => {
-            p.setAttribute('style', 'opacity: 0;');
-            p1.setAttribute('style', 'opacity: 0;');
-            setTimeout(() => {
-                p.setAttribute('style', 'display: none;');
-                p1.setAttribute('style', 'display: none;');
-                list.setAttribute('style', 'display: flex; opacity: 1; transition: opacity 1.5s;');
-                p2.setAttribute('style', 'display: flex; opacity: 1; transition: opacity 1.5s;');
-            }, 1500);
-
-            setTimeout(fadeIn, 8000);
-        }
-
-        fadeIn();
     </script>
 </body>
 

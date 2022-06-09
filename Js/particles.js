@@ -1,20 +1,20 @@
 let background1 = "#212121";
 let background2 = "#000000";
 let particles = 15;
-let size = 4;
+let size = 8;
 let distance = 150;
 
 if (screen.width <= 375) {
-    distance = 55;
-    particles = 55;
+    distance = 100;
+    particles = 25;
 } else if (screen.width <= 800) {
-    distance = 70;
-    particles = 70;
-    size = 6;
-} else {
-    particles = 100;
-    distance = 110;
+    particles = 40;
+    distance = 160;
     size = 8;
+} else {
+    particles = 60;
+    distance = 240;
+    size = 10;
 }
 
 document.querySelector('.header__mode').addEventListener('click', () => {
@@ -32,7 +32,7 @@ document.querySelector('.header__mode').addEventListener('click', () => {
                     "value": particles,
                     "density": {
                         "enable": false,
-                        "value_area": 1500
+                        "value_area": 2000
                     }
                 },
                 "color": {
@@ -82,14 +82,14 @@ document.querySelector('.header__mode').addEventListener('click', () => {
                 },
                 "move": {
                     "enable": true,
-                    "speed": 1.5,
+                    "speed": 2.5,
                     "direction": "top",
                     "random": true,
                     "straight": false,
                     "out_mode": "out",
                     "bounce": false,
                     "attract": {
-                        "enable": true,
+                        "enable": false,
                         "rotateX": 5000,
                         "rotateY": 5000
                     }
@@ -99,14 +99,14 @@ document.querySelector('.header__mode').addEventListener('click', () => {
                 "detect_on": "canvas",
                 "events": {
                     "onhover": {
-                        "enable": true,
+                        "enable": false,
                         "mode": "bubble"
                     },
                     "onclick": {
                         "enable": false,
                         "mode": "push"
                     },
-                    "resize": true
+                    "resize": false
                 },
                 "modes": {
                     "grab": {
@@ -117,7 +117,7 @@ document.querySelector('.header__mode').addEventListener('click', () => {
                     },
                     "bubble": {
                         "distance": 225,
-                        "size": 9,
+                        "size": 15,
                         "duration": 2,
                         "opacity": 8,
                         "speed": 3
@@ -137,7 +137,7 @@ document.querySelector('.header__mode').addEventListener('click', () => {
             "retina_detect": true
         }
     );
-    
+
 });
 particlesJS(
     {
@@ -196,7 +196,7 @@ particlesJS(
             },
             "move": {
                 "enable": true,
-                "speed": 1.5,
+                "speed": 2.5,
                 "direction": "top",
                 "random": true,
                 "straight": false,
