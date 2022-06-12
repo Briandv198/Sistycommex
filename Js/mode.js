@@ -138,6 +138,9 @@ document.querySelector('.header__mode').addEventListener('click', () => {
             .main-container .footer ul li a {
                 color: var(--White);
             }
+            .main-container .footer ul li {
+                color: var(--White);
+            }
             `;
         btnL.removeAttribute("id");
         document.body.querySelector('.header__mode').setAttribute("id", "night");

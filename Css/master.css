@@ -53,6 +53,8 @@ h3 {
 }
 
 p {
+    display: flex;
+    align-items: center;
     text-align: center;
     font-size: 1.8rem;
 }
@@ -254,6 +256,8 @@ p {
 .main-container .main .main__carousel #main-services .list {
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     font-size: 1.8rem;
     color: var(--Sapphire-Blue);
@@ -412,44 +416,48 @@ p {
 
 /* ----------Slider---------- */
 .slider {
-	width: 95%;
-	margin: auto;
-	overflow: hidden;
-}.slider .ul:hover {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .ul {
+    display: flex;
+    width: 300%;
+    animation: scroll 8s linear infinite;
+}
+
+.slider .ul:hover {
     cursor: pointer;
     animation-play-state: paused;
 }
 
-.slider .ul {
-	display: flex;
-	padding: 0;
-	width: 200%;
-	
-	animation: cambio 8s infinite alternate linear;
-}
-
 .slider .li {
-	width: 100%;
-	list-style: none;
+    width: 100%;
 }
 
-.slider .img {
-	width: 100%;
+@keyframes scroll {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -100%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
 }
 
-@keyframes cambio {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	75% {margin-left: -100%;}
-	100% {margin-left: -100%;}
-	
-	/* 50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;} */
-}
 /* ----------Slider2---------- */
 .slider .ul2:hover {
     cursor: pointer;
@@ -457,23 +465,46 @@ p {
 }
 
 .slider .ul2 {
-	display: flex;
-	padding: 0;
-	width: 300%;
-	
-	animation: cambio2 12s infinite alternate linear;
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: scroll2 12s linear infinite;
+}
+.slider .ul2 .li {
+    padding: 0 !important;
 }
 
-@keyframes cambio2 {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	40% {margin-left: -100%;}
-	60% {margin-left: -100%;}
-	
-	80% {margin-left: -200%;}
-	100% {margin-left: -200%;} 
+@keyframes scroll2 {
+    0% {
+        margin-left: 0;
+    }
+
+    17% {
+        margin-left: 0;
+    }
+
+    34% {
+        margin-left: -100%;
+    }
+
+    51% {
+        margin-left: -100%;
+    }
+
+    68% {
+        margin-left: -200%;
+    }
+
+    85% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
 }
+
 /* ------------------------------------- */
 @keyframes slide {
     0% {
