@@ -26,7 +26,12 @@
     .main-container .footer ul li a {
         font-size: 1.4rem;
     }
+
     .main-container .main .main__carousel #main-services .list {
         flex-direction: row;
+    }
+
+    #main-services .slider .ul2 .li {
+        padding-inline: 30px;
     }
 }

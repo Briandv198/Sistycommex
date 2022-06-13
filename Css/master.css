@@ -55,6 +55,7 @@ h3 {
 p {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     font-size: 1.8rem;
 }
@@ -107,29 +108,20 @@ p {
     animation-direction: reverse;
 }
 
-#loader .loader-background1 {
+#loader .loader-background2,#loader .loader-background1 {
     display: block;
     position: absolute;
     width: 100%;
     height: 200vh;
 }
 
-#loader .loader-background2 {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 200vh;
-}
-
-#loader .loader-background1 {
-    background-color: var(--Oxford-Blue);
-    /* top: -200%; */
-    animation: input-loader2;
+#loader .loader-background2{
+    background-color: var(--just-white);
+    animation: input-loader;
     animation-duration: 2.5s;
 }
-
-#loader .loader-background2 {
-    background-color: var(--just-white);
+#loader .loader-background1 {
+    background-color: var(--Oxford-Blue);
     animation: input-loader;
     animation-duration: 2.5s;
 }
@@ -424,7 +416,7 @@ p {
 .slider .ul {
     display: flex;
     width: 300%;
-    animation: scroll 8s linear infinite;
+    animation: scroll 16s linear infinite;
 }
 
 .slider .ul:hover {
@@ -469,10 +461,10 @@ p {
     padding: 0;
     width: 400%;
 
-    animation: scroll2 12s linear infinite;
+    animation: scroll2 24s linear infinite;
 }
-.slider .ul2 .li {
-    padding: 0 !important;
+#main-services .slider .ul2 .li {
+    padding-inline: 0;
 }
 
 @keyframes scroll2 {
