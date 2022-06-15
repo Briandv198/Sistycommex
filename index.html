@@ -95,19 +95,19 @@
             </section>
 
             <section class="main__form">
-                <form id="main-contact" class="flex-layout-vertical" action="mailto:atencion_a_clientes@sistycommex.com.mx" method="get">
+                <form id="main-contact" class="flex-layout-vertical" action="enviar.php" method="post">
                     <h3>Contacto</h3>
                     <label for="name" class="flex-layout-vertical">
                         <p>Nombre</p>
-                        <input type="text" id="name" name="subject" class="background-area">
+                        <input type="text" id="name" name="name" class="background-area">
                     </label>
                     <label for="email" class="flex-layout-vertical">
                         <p>Correo</p>
-                        <input type="email" id="email" name="body" class="background-area">
+                        <input type="email" id="mail" name="email" class="background-area">
                     </label>
                     <label for="textarea" class="flex-layout-vertical">
                         <p>Comentario</p>
-                        <textarea id="textarea" name="body" rows="10" class="background-area"></textarea>
+                        <textarea id="textarea" name="textarea" rows="10" class="background-area"></textarea>
                     </label>
                     <input type="submit" value="Enviar" class="button">
                 </form>
