@@ -95,20 +95,19 @@
             </section>
 
             <section class="main__form">
-                <form id="main-contact" class="flex-layout-vertical" action="mailto:briandv198@outlook.com"
-                    method="post" enctype="text/plain">
+                <form id="main-contact" class="flex-layout-vertical" action="mailto:atencion_a_clientes@sistycommex.com.mx" method="get">
                     <h3>Contacto</h3>
                     <label for="name" class="flex-layout-vertical">
                         <p>Nombre</p>
-                        <input type="text" id="name" class="background-area">
+                        <input type="text" id="name" name="subject" class="background-area">
                     </label>
                     <label for="email" class="flex-layout-vertical">
                         <p>Correo</p>
-                        <input type="email" id="email" class="background-area">
+                        <input type="email" id="email" name="body" class="background-area">
                     </label>
                     <label for="textarea" class="flex-layout-vertical">
                         <p>Comentario</p>
-                        <textarea name="" id="textarea" rows="10" class="background-area"></textarea>
+                        <textarea id="textarea" name="body" rows="10" class="background-area"></textarea>
                     </label>
                     <input type="submit" value="Enviar" class="button">
                 </form>
@@ -124,7 +123,7 @@
             </ul>
             <ul>
                 <li><a href="https://api.whatsapp.com/send?phone=525587897978">Tel: 55-8789-7978</a></li>
-                <li><a href="mailto:mail@mail.com">Correo: correo@mail.com</a></li>
+                <li><a href="mailto:atencion_a_clientes@sistycommex.com.mx">Correo: correo@mail.com</a></li>
             </ul>
         </footer>
     </div>
@@ -133,6 +132,15 @@
         setTimeout(() => {
             loader.setAttribute('style', 'display:none');
         }, 2500);
+
+        function send() {
+            let action_src = "mailto:atencion_a_clientes@sistycommex.com.mx?subject=Systicommex&body=Nombre: " + document.getElementsByName("name")[0].value + 
+            "%0D%0ACorreo: " + document.getElementsByName("email")[0].value + "%0D%0AComentario: " + document.getElementsByName("textarea")[0].value;
+            let your_form = document.getElementById('main-contact');
+            console.log(action_src);
+            debugger;
+            your_form.action = action_src;
+        }
     </script>
 </body>
 
