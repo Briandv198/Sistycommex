@@ -1,14 +1,12 @@
 # Landing-Page
 
-_Se creara el frontend de un sitio web partiendo de su [wireframe](https://www.figma.com/file/sMmlQaZldfDcLERYYWe6h4/Bata-Bit?node-id=44%3A593), analizando su arquitectura y construyendo el código de cada una de sus partes para que este se adapte a cualquier dispositivo de los usuarios._
+_Se creara el frontend de un sitio web partiendo de su [wireframe](https://www.figma.com/file/vEd41jxRU2O06O3nMHTEGT/Sistycommex), analizando su arquitectura y construyendo el código de cada una de sus partes para que este se adapte a cualquier dispositivo de los usuarios._
 
 _Esta pagina esta hecha con HTML y CSS puro._
 
 ## Comenzando 🚀
 
-_Parar descargar el proyecto hay que hacer un git clone de https://github.com/Briandv198/briandv198.github.io_
-
-_Para ver el proyecto [aqui](briandv198.github.io)._
+_Parar descargar el proyecto hay que hacer un git clone de https://briandv198.github.io/Sistycommex/_
 
 ### Pre-requisitos 📋
 
