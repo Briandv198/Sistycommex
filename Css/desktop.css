@@ -99,4 +99,8 @@
     #main-services .slider .ul2 .li {
         padding-inline: 60px;
     }
+
+    .main-container .main .main__carousel #main-services .flex-layout-vertical {
+        width: calc(100% - 400px);
+    }
 }
